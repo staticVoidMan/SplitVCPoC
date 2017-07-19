@@ -13,6 +13,7 @@
     IBOutlet UITableView *tvMenu;
     
     NSArray *arrDatasource;
+    NSInteger selectedRow;
 }
 @end
 
@@ -22,6 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.splitViewController setPreferredDisplayMode:UISplitViewControllerDisplayModePrimaryHidden];
+    [tvMenu setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     
     arrDatasource = @[@{@"title"                : @"First"
                         , @"segueIdentifier"    : @"segueSVMFirstDetailVC"}
@@ -48,18 +50,25 @@
 }
 #pragma mark - UITableViewDelegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     //Hide Master viewController (with animation)
     [UIView animateWithDuration:0.27f
                      animations:^{
                          [self.splitViewController setPreferredDisplayMode:UISplitViewControllerDisplayModePrimaryHidden];
                      }];
     
-    //Load Detail viewController
-    NSDictionary *dictOption = arrDatasource[indexPath.row];
-    NSString *strSegueIdentifier = dictOption[@"segueIdentifier"];
-    
-    [self performSegueWithIdentifier:strSegueIdentifier
-                              sender:nil];
+    if (indexPath.row != selectedRow) {
+        selectedRow = indexPath.row;
+        
+        //Load Detail viewController
+        NSDictionary *dictOption = arrDatasource[indexPath.row];
+        NSString *strSegueIdentifier = dictOption[@"segueIdentifier"];
+        
+        NSLog(@"Loading Detail viewController with segue identifier: %@", strSegueIdentifier);
+        [self performSegueWithIdentifier:strSegueIdentifier
+                                  sender:nil];
+    }
 }
 
 @end
