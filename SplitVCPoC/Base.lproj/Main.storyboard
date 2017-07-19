@@ -50,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcW-H6-qk5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="150" y="260"/>
+            <point key="canvasLocation" x="150" y="1069"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tSi-Bq-KbM">
@@ -74,7 +74,7 @@
                 <splitViewController id="mQl-DO-TwX" sceneMemberID="viewController">
                     <connections>
                         <segue destination="ZEj-od-CKe" kind="relationship" relationship="masterViewController" id="dbz-kJ-QAz"/>
-                        <segue destination="TT5-7n-Qdl" kind="relationship" relationship="detailViewController" id="bsm-kW-d9t"/>
+                        <segue destination="1Se-PN-uIh" kind="relationship" relationship="detailViewController" id="Hn3-ly-fSy"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7UV-p1-Nl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -133,7 +133,7 @@
                     <connections>
                         <outlet property="tvMenu" destination="Pzk-xy-nFq" id="dsi-le-qll"/>
                         <segue destination="ih0-6r-aaC" kind="showDetail" identifier="segueSVMSecondDetailVC" id="UVL-JP-Am6"/>
-                        <segue destination="TT5-7n-Qdl" kind="showDetail" identifier="segueSVMFirstDetailVC" id="L6J-Am-Iz2"/>
+                        <segue destination="1Se-PN-uIh" kind="showDetail" identifier="segueSVMFirstDetailVC" id="mMw-OF-XiS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tjp-MS-bWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -186,7 +186,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Second" id="CvH-NE-BAJ">
-                        <barButtonItem key="leftBarButtonItem" width="30" style="plain" id="iv4-nb-w3r">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="iv4-nb-w3r">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NpH-GC-i5l">
                                 <rect key="frame" x="16" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -224,11 +224,27 @@
             </objects>
             <point key="canvasLocation" x="932" y="1856"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ADt-Wy-17b">
+            <objects>
+                <navigationController id="1Se-PN-uIh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eqY-Ql-5tD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TT5-7n-Qdl" kind="relationship" relationship="rootViewController" id="Vwa-8q-bWE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2b-vI-K2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="260"/>
+        </scene>
     </scenes>
     <resources>
         <image name="hamburger" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bsm-kW-d9t"/>
+        <segue reference="mMw-OF-XiS"/>
     </inferredMetricsTieBreakers>
 </document>
