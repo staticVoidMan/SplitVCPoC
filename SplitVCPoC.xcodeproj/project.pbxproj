@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F25AFD021F1CD5A2004C267E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F25AFD011F1CD5A2004C267E /* main.m */; };
+		F25AFD051F1CD5A2004C267E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F25AFD041F1CD5A2004C267E /* AppDelegate.m */; };
+		F25AFD0B1F1CD5A2004C267E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25AFD091F1CD5A2004C267E /* Main.storyboard */; };
+		F25AFD0D1F1CD5A2004C267E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25AFD0C1F1CD5A2004C267E /* Assets.xcassets */; };
+		F25AFD101F1CD5A2004C267E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25AFD0E1F1CD5A2004C267E /* LaunchScreen.storyboard */; };
+		F25AFD1F1F1CD614004C267E /* SVMMasterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25AFD1E1F1CD614004C267E /* SVMMasterVC.m */; };
+		F25AFD221F1CD61F004C267E /* SVMFirstDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25AFD211F1CD61F004C267E /* SVMFirstDetailVC.m */; };
+		F25AFD251F1CD62D004C267E /* SVMSecondDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25AFD241F1CD62D004C267E /* SVMSecondDetailVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F25AFCFD1F1CD5A2004C267E /* SplitVCPoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitVCPoC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25AFD011F1CD5A2004C267E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F25AFD031F1CD5A2004C267E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F25AFD041F1CD5A2004C267E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F25AFD0A1F1CD5A2004C267E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F25AFD0C1F1CD5A2004C267E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F25AFD0F1F1CD5A2004C267E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F25AFD111F1CD5A2004C267E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25AFD1D1F1CD614004C267E /* SVMMasterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVMMasterVC.h; sourceTree = "<group>"; };
+		F25AFD1E1F1CD614004C267E /* SVMMasterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMMasterVC.m; sourceTree = "<group>"; };
+		F25AFD201F1CD61F004C267E /* SVMFirstDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVMFirstDetailVC.h; sourceTree = "<group>"; };
+		F25AFD211F1CD61F004C267E /* SVMFirstDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMFirstDetailVC.m; sourceTree = "<group>"; };
+		F25AFD231F1CD62D004C267E /* SVMSecondDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVMSecondDetailVC.h; sourceTree = "<group>"; };
+		F25AFD241F1CD62D004C267E /* SVMSecondDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMSecondDetailVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F25AFCFA1F1CD5A2004C267E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F25AFCF41F1CD5A2004C267E = {
+			isa = PBXGroup;
+			children = (
+				F25AFCFF1F1CD5A2004C267E /* SplitVCPoC */,
+				F25AFCFE1F1CD5A2004C267E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F25AFCFE1F1CD5A2004C267E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F25AFCFD1F1CD5A2004C267E /* SplitVCPoC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F25AFCFF1F1CD5A2004C267E /* SplitVCPoC */ = {
+			isa = PBXGroup;
+			children = (
+				F25AFD031F1CD5A2004C267E /* AppDelegate.h */,
+				F25AFD041F1CD5A2004C267E /* AppDelegate.m */,
+				F25AFD091F1CD5A2004C267E /* Main.storyboard */,
+				F25AFD181F1CD5BD004C267E /* Classes */,
+				F25AFD0C1F1CD5A2004C267E /* Assets.xcassets */,
+				F25AFD0E1F1CD5A2004C267E /* LaunchScreen.storyboard */,
+				F25AFD111F1CD5A2004C267E /* Info.plist */,
+				F25AFD001F1CD5A2004C267E /* Supporting Files */,
+			);
+			path = SplitVCPoC;
+			sourceTree = "<group>";
+		};
+		F25AFD001F1CD5A2004C267E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F25AFD011F1CD5A2004C267E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F25AFD181F1CD5BD004C267E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F25AFD191F1CD5C3004C267E /* SVMMasterVC */,
+				F25AFD1B1F1CD5F4004C267E /* SVMFirstDetailVC */,
+				F25AFD1C1F1CD5FE004C267E /* SVMSecondDetailVC */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F25AFD191F1CD5C3004C267E /* SVMMasterVC */ = {
+			isa = PBXGroup;
+			children = (
+				F25AFD1D1F1CD614004C267E /* SVMMasterVC.h */,
+				F25AFD1E1F1CD614004C267E /* SVMMasterVC.m */,
+			);
+			name = SVMMasterVC;
+			sourceTree = "<group>";
+		};
+		F25AFD1B1F1CD5F4004C267E /* SVMFirstDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				F25AFD201F1CD61F004C267E /* SVMFirstDetailVC.h */,
+				F25AFD211F1CD61F004C267E /* SVMFirstDetailVC.m */,
+			);
+			name = SVMFirstDetailVC;
+			sourceTree = "<group>";
+		};
+		F25AFD1C1F1CD5FE004C267E /* SVMSecondDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				F25AFD231F1CD62D004C267E /* SVMSecondDetailVC.h */,
+				F25AFD241F1CD62D004C267E /* SVMSecondDetailVC.m */,
+			);
+			name = SVMSecondDetailVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F25AFCFC1F1CD5A2004C267E /* SplitVCPoC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25AFD141F1CD5A2004C267E /* Build configuration list for PBXNativeTarget "SplitVCPoC" */;
+			buildPhases = (
+				F25AFCF91F1CD5A2004C267E /* Sources */,
+				F25AFCFA1F1CD5A2004C267E /* Frameworks */,
+				F25AFCFB1F1CD5A2004C267E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SplitVCPoC;
+			productName = SplitVCPoC;
+			productReference = F25AFCFD1F1CD5A2004C267E /* SplitVCPoC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F25AFCF51F1CD5A2004C267E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SVM;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = svmLogics;
+				TargetAttributes = {
+					F25AFCFC1F1CD5A2004C267E = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = F25AFCF81F1CD5A2004C267E /* Build configuration list for PBXProject "SplitVCPoC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F25AFCF41F1CD5A2004C267E;
+			productRefGroup = F25AFCFE1F1CD5A2004C267E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F25AFCFC1F1CD5A2004C267E /* SplitVCPoC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F25AFCFB1F1CD5A2004C267E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25AFD101F1CD5A2004C267E /* LaunchScreen.storyboard in Resources */,
+				F25AFD0D1F1CD5A2004C267E /* Assets.xcassets in Resources */,
+				F25AFD0B1F1CD5A2004C267E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F25AFCF91F1CD5A2004C267E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25AFD1F1F1CD614004C267E /* SVMMasterVC.m in Sources */,
+				F25AFD051F1CD5A2004C267E /* AppDelegate.m in Sources */,
+				F25AFD021F1CD5A2004C267E /* main.m in Sources */,
+				F25AFD251F1CD62D004C267E /* SVMSecondDetailVC.m in Sources */,
+				F25AFD221F1CD61F004C267E /* SVMFirstDetailVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F25AFD091F1CD5A2004C267E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25AFD0A1F1CD5A2004C267E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F25AFD0E1F1CD5A2004C267E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25AFD0F1F1CD5A2004C267E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F25AFD121F1CD5A2004C267E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F25AFD131F1CD5A2004C267E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F25AFD151F1CD5A2004C267E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SplitVCPoC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.svmLogics.SplitVCPoC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		F25AFD161F1CD5A2004C267E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SplitVCPoC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.svmLogics.SplitVCPoC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F25AFCF81F1CD5A2004C267E /* Build configuration list for PBXProject "SplitVCPoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25AFD121F1CD5A2004C267E /* Debug */,
+				F25AFD131F1CD5A2004C267E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F25AFD141F1CD5A2004C267E /* Build configuration list for PBXNativeTarget "SplitVCPoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25AFD151F1CD5A2004C267E /* Debug */,
+				F25AFD161F1CD5A2004C267E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F25AFCF51F1CD5A2004C267E /* Project object */;
+}
